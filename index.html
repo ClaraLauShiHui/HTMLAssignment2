@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <link rel="stylesheet" href="style.css">
+
+<body>
+    <nav>
+        <a href="index.html"><b>Home</b></a> |
+        <a href="classes.html"><b>Classes</b></a> |
+        <a href="findus.html"><b>Find Us</b></a> |
+    </nav>
+   
+</body>
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+  color: white;
+}
+
+
+body {
+  margin: 2;
+  font-family: Calibri;
+  font-size: 20px;
+}
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+}
+
+.content {
+  position: fixed;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #ffffff;
+  width: 100%;
+  padding: 10px;
+}
+
+#myBtn {
+  width: 200px;
+  font-size: 10px;
+  padding: 10px;
+  border: none;
+  background: #f0f0f0;
+  color: #ff0000;
+  cursor: pointer;
+}
+
+#myBtn:hover {
+  background: #ddd;
+  color: black;
+}
+
+</body
+</style>
+<br>
+<img src="logo.png" alt="The pit logo">
+
+<hr>
+
+</head>
+<body>
+
+
+
+<video autoplay muted loop id="gympromo" width="1280" height="700" controls>
+  <source src="gympromo.mp4" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
+
+<div class="content">
+  <h1>THE PIT GYM</h1> 
+  <p style="color:red;"><b>Performance.Improvement.Technique</b>
+<br>
+<br>
+With our team of dedicated trainers, your fitness goals become ours. 
+Your impossible becomes our mission.
+</p>
+  <button id="myBtn" onclick="myFunction()">Pause</button>
+</div>
+
+
+<script>
+var video = document.getElementById("gympromo");
+var btn = document.getElementById("myBtn");
+
+function myFunction() {
+  if (video.paused) {
+    video.play();
+    btn.innerHTML = "Pause";
+  } else {
+    video.pause();
+    btn.innerHTML = "Play";
+  }
+}
+</script>
+
+<body>
+<h1 style= "font-family: Arial Black; text-align:center; font-size: 150%; color: White;"> ABOUT </h1>
+ <p style= "font-family: arial; text-align: center;"> <b>We all can be more than we are today. <br> More than what we think we can be. At the PIT, we’re in the business of making you better - <br> better than what you were yesterday, <br> better than what you are today, <br> better than what you ever dreamed you could be. <br>
+
+We are passionate about creating athletes out of everyday people <br> through our strength and conditioning training programs.
+
+</b></p>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+</body>
+   
+</html>
